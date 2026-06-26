@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOFIX | Premium Car Service Booking</title>
+    <!-- Inter Font from Google Fonts for premium 700/300 weight typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav" id="top-navigation">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">AUTOFIX</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#workshops-section" class="nav-link">Workshops</a></li>
+                <li><a href="#services-section" class="nav-link">Services</a></li>
+                <li><a href="#parts-section" class="nav-link">Spare Parts</a></li>
+                <li><a href="#booking-section" class="nav-link">Book Now</a></li>
+                <li><a href="#pickup-valet-section" class="nav-link">Pickup & Valet</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="city-selector-wrapper">
+                    <i class="fa-solid fa-location-dot location-icon"></i>
+                    <select id="global-city-selector" class="nav-city-select">
+                        <option value="bengaluru">BENGALURU</option>
+                        <option value="hyderabad">HYDERABAD</option>
+                        <option value="chennai">CHENNAI</option>
+                    </select>
+                </div>
+                <a href="#booking-section" class="btn-nav-book">BOOK NOW</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-band" id="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-label">ENGINEERED PRECISION</span>
+            <h1 class="hero-title">AUTOFIX PREMIUM<br>VEHICLE CARE.</h1>
+            <p class="hero-subtitle">High-performance car maintenance, tuning, and genuine spares across India's premier cities. Engineered for enthusiasts.</p>
+            <div class="hero-actions">
+                <a href="#booking-section" class="button-primary">BOOK SERVICE</a>
+                <a href="#workshops-section" class="button-primary-outline">EXPLORE WORKSHOPS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- M Tricolor Divider -->
+    <div class="m-stripe-divider"></div>
+
+    <!-- City & Workshops Section -->
+    <section class="workshops-section" id="workshops-section">
+        <div class="container">
+            <span class="section-label">01 // NETWORKS</span>
+            <h2 class="section-title">AUTOFIX PARTNER HUBS</h2>
+            <p class="section-description">Select your city to explore certified partner workshops with state-of-the-art diagnostic lanes and factory-trained masters.</p>
+            
+            <!-- City Selection Tabs -->
+            <div class="city-tabs" id="city-tabs-container">
+                <button class="category-tab active" data-city="bengaluru">BENGALURU</button>
+                <button class="category-tab" data-city="hyderabad">HYDERABAD</button>
+                <button class="category-tab" data-city="chennai">CHENNAI</button>
+            </div>
+
+            <!-- Workshop Cards Grid -->
+            <div class="workshop-grid" id="workshop-cards-grid">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- M Tricolor Divider -->
+    <div class="m-stripe-divider"></div>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services-section">
+        <div class="container">
+            <span class="section-label">02 // SERVICES</span>
+            <h2 class="section-title">STANDARD SERVICE CATALOG</h2>
+            <p class="section-description">Explore our transparent service rates. Designed for efficiency, reliability, and precision maintenance using quality fluids and check routines.</p>
+
+            <div class="services-grid" id="services-grid-container">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- M Tricolor Divider -->
+    <div class="m-stripe-divider"></div>
+
+    <!-- Spare Parts Section -->
+    <section class="parts-section" id="parts-section">
+        <div class="container">
+            <span class="section-label">03 // COMPONENTS</span>
+            <h2 class="section-title">GENUINE REPLACEMENT PARTS</h2>
+            <p class="section-description">Check prices and order certified spare parts directly. Add parts to your booking session to have them installed by our workshop masters during service.</p>
+
+            <div class="parts-grid" id="parts-grid-container">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- M Tricolor Divider -->
+    <div class="m-stripe-divider"></div>
+
+    <!-- Pickup & Drop Info Section -->
+    <section class="pickup-valet-section" id="pickup-valet-section">
+        <div class="container">
+            <div class="valet-showcase-grid">
+                <div class="valet-image-side">
+                    <!-- Unsplash image for valet/driving -->
+                    <div class="valet-img-placeholder" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ZkXlNYbNqQQDP0uOHiQO_Qoc8CPL5dOGPn2R-Zao4A&s=10')"></div>
+                </div>
+                <div class="valet-content-side">
+                    <span class="section-label">04 // EXCLUSIVES</span>
+                    <h2 class="section-title">DOORSTEP PERFORMANCE VALET</h2>
+                    <p class="valet-intro">We respect your time. Our premium Pickup & Drop service ensures your vehicle is transported securely to and from our service hub without you lifting a finger.</p>
+                    
+                    <div class="valet-features">
+                        <div class="valet-feature-item">
+                            <div class="valet-feature-num">01</div>
+                            <div class="valet-feature-text">
+                                <h3>Flatbed Towing Options</h3>
+                                <p>Optional covered container flatbed transport for low-clearance sports cars and performance vehicles.</p>
+                            </div>
+                        </div>
+                        <div class="valet-feature-item">
+                            <div class="valet-feature-num">02</div>
+                            <div class="valet-feature-text">
+                                <h3>Certified Valet Pilots</h3>
+                                <p>All drivers are background-checked, track-trained, and fully insured to operate high-performance vehicles.</p>
+                            </div>
+                        </div>
+                        <div class="valet-feature-item">
+                            <div class="valet-feature-num">03</div>
+                            <div class="valet-feature-text">
+                                <h3>GPS Live Tracking</h3>
+                                <p>Monitor your machine's exact location in real-time from the pickup spot directly to the service bay and back.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- M Tricolor Divider -->
+    <div class="m-stripe-divider"></div>
+
+    <!-- Interactive Booking Section -->
+    <section class="booking-section" id="booking-section">
+        <div class="container">
+            <span class="section-label">05 // CONFIGURATOR</span>
+            <h2 class="section-title">BOOK YOUR SESSION</h2>
+            <p class="section-description">Customize your service slot. Select workshops, select services, add genuine spares, and schedule your appointment with engineered precision.</p>
+
+            <div class="booking-workspace">
+                <!-- Booking Form -->
+                <form id="booking-form" class="booking-form" autocomplete="off">
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="booking-city" class="input-label">SELECT CITY</label>
+                            <select id="booking-city" class="text-input" required>
+                                <option value="bengaluru">BENGALURU</option>
+                                <option value="hyderabad">HYDERABAD</option>
+                                <option value="chennai">CHENNAI</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-workshop" class="input-label">SELECT WORKSHOP</label>
+                            <select id="booking-workshop" class="text-input" required>
+                                <!-- Dynamically populated based on selected city -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Service List Selection Checkboxes -->
+                    <div class="form-group">
+                        <label class="input-label">SELECT SERVICES</label>
+                        <div class="services-selector-list" id="form-services-list">
+                            <!-- Dynamic service checkboxes populated via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Spare Parts List Selection Checkboxes -->
+                    <div class="form-group">
+                        <label class="input-label">SELECT SPARE PARTS (OPTIONAL)</label>
+                        <div class="services-selector-list" id="form-parts-list">
+                            <!-- Dynamic spare parts checkboxes populated via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Pickup & Drop Toggle Option -->
+                    <div class="valet-toggle-card">
+                        <div class="valet-toggle-header">
+                            <div class="valet-toggle-info">
+                                <h3>PREMIUM VALET PICKUP & DROP</h3>
+                                <p>Add professional door-to-door vehicle transport by our certified valet pilots. Includes GPS tracking and full transit insurance.</p>
+                            </div>
+                            <div class="toggle-switch-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" id="pickup-drop-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Conditionally shown address fields when toggle is checked -->
+                        <div class="valet-address-fields" id="valet-address-fields">
+                            <div class="form-group">
+                                <label for="pickup-address" class="input-label">PICKUP & DROP ADDRESS</label>
+                                <textarea id="pickup-address" class="text-input textarea-input" placeholder="Enter complete address for vehicle pickup and return drop-off..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Date & Time Row -->
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="booking-date" class="input-label">APPOINTMENT DATE</label>
+                            <input type="date" id="booking-date" class="text-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-time" class="input-label">APPOINTMENT TIME</label>
+                            <select id="booking-time" class="text-input" required>
+                                <option value="" disabled selected>Select a slot</option>
+                                <option value="09:00 AM">09:00 AM - 11:00 AM</option>
+                                <option value="11:00 AM">11:00 AM - 01:00 PM</option>
+                                <option value="02:00 PM">02:00 PM - 04:00 PM</option>
+                                <option value="04:00 PM">04:00 PM - 06:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Client Personal Details -->
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="client-name" class="input-label">FULL NAME</label>
+                            <input type="text" id="client-name" class="text-input" placeholder="e.g. ARJUN MEHTA" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="client-phone" class="input-label">PHONE NUMBER</label>
+                            <input type="tel" id="client-phone" class="text-input" placeholder="e.g. +91 98765 43210" pattern="^[6-9]\d{9}$|^[+]\d{11,12}$" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="client-email" class="input-label">EMAIL ADDRESS</label>
+                            <input type="email" id="client-email" class="text-input" placeholder="e.g. arjun@autofix.in" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-details" class="input-label">VEHICLE DETAILS (MAKE, MODEL, REG. NO.)</label>
+                            <input type="text" id="car-details" class="text-input" placeholder="e.g. BMW M340i (KA-03-MM-1234)" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button-primary btn-submit-booking">CONFIRM BOOKING</button>
+                </form>
+
+                <!-- Sticky Booking Summary Panel -->
+                <div class="booking-summary-panel">
+                    <h3 class="summary-title">APPOINTMENT SUMMARY</h3>
+                    <div class="summary-divider"></div>
+                    
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span class="sum-label">CITY:</span>
+                            <span class="sum-val" id="summary-city">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="sum-label">WORKSHOP:</span>
+                            <span class="sum-val" id="summary-workshop">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="sum-label">DATE & TIME:</span>
+                            <span class="sum-val" id="summary-datetime">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="sum-label">VEHICLE:</span>
+                            <span class="sum-val" id="summary-vehicle">-</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-divider"></div>
+                    
+                    <h4 class="summary-subtitle">SELECTED SERVICES</h4>
+                    <ul class="summary-services-list" id="summary-services-list">
+                        <li class="empty-list-msg">No services selected</li>
+                    </ul>
+
+                    <div class="summary-divider"></div>
+                    
+                    <h4 class="summary-subtitle">SELECTED SPARE PARTS</h4>
+                    <ul class="summary-services-list" id="summary-parts-list">
+                        <li class="empty-list-msg">No parts selected</li>
+                    </ul>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-price-breakdown">
+                        <div class="price-row">
+                            <span>SERVICES SUB-TOTAL:</span>
+                            <span id="price-subtotal">₹0</span>
+                        </div>
+                        <div class="price-row">
+                            <span>SPARE PARTS SUB-TOTAL:</span>
+                            <span id="price-parts-subtotal">₹0</span>
+                        </div>
+                        <div class="price-row" id="valet-price-row" style="display: none;">
+                            <span>VALET PICKUP & DROP:</span>
+                            <span id="price-valet">₹999</span>
+                        </div>
+                        <div class="price-row">
+                            <span>TAXES & FEES (18% GST):</span>
+                            <span id="price-gst">₹0</span>
+                        </div>
+                        <div class="price-row total-row">
+                            <span>ESTIMATED TOTAL:</span>
+                            <span id="price-grandtotal">₹0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Booking Confirmation Overlay -->
+    <div class="confirmation-overlay" id="confirmation-overlay">
+        <div class="confirmation-card">
+            <span class="m-stripe-logo">
+                <span class="stripe-blue-light"></span>
+                <span class="stripe-blue-dark"></span>
+                <span class="stripe-red"></span>
+            </span>
+            <div class="confirmation-success-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2 class="confirm-title">BOOKING CONFIRMED</h2>
+            <div class="ticket-id-badge">REF: <span id="confirm-ref">M-8302X</span></div>
+            <p class="confirm-msg">Your performance service appointment has been scheduled with engineered precision.</p>
+            
+            <div class="confirm-details-box">
+                <div class="cd-row">
+                    <span>WORKSHOP:</span>
+                    <strong id="confirm-workshop">M-Power Performance Center</strong>
+                </div>
+                <div class="cd-row">
+                    <span>DATE & TIME:</span>
+                    <strong id="confirm-datetime">June 28, 2026 at 09:00 AM</strong>
+                </div>
+                <div class="cd-row">
+                    <span>VALET STATUS:</span>
+                    <strong id="confirm-valet">VALET PICKUP ACTIVE</strong>
+                </div>
+                <div class="cd-row">
+                    <span>VEHICLE:</span>
+                    <strong id="confirm-vehicle">KA-03-MM-1234</strong>
+                </div>
+                <div class="cd-row total-row">
+                    <span>AMOUNT DUE:</span>
+                    <strong id="confirm-amount">₹7,668</strong>
+                </div>
+            </div>
+
+            <p class="confirm-footer-note">A confirmation email and SMS with live valet-tracking coordinates have been dispatched. Please ensure your machine is ready at the scheduled hour.</p>
+
+            <button type="button" class="button-primary" id="btn-close-confirm">DISMISS SYSTEM</button>
+        </div>
+    </div>
+
+    <!-- M Tricolor Divider -->
+    <div class="m-stripe-divider"></div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer-section">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo">
+                    <span class="m-stripe-logo">
+                        <span class="stripe-blue-light"></span>
+                        <span class="stripe-blue-dark"></span>
+                        <span class="stripe-red"></span>
+                    </span>
+                    <span class="logo-text">AUTOFIX</span>
+                </a>
+                <p class="footer-tagline">Engineered motorsport precision for premium performance vehicles. Serving urban India since 2020.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>HUBS</h4>
+                <ul>
+                    <li><a href="#workshops-section">Bengaluru Hubs</a></li>
+                    <li><a href="#workshops-section">Chennai Hubs</a></li>
+                    <li><a href="#workshops-section">Hyderabad Hubs</a></li>
+                    <li><a href="#pickup-valet-section">Valet Coverage Maps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>PROGRAMS</h4>
+                <ul>
+                    <li><a href="#services-section">General Service</a></li>
+                    <li><a href="#services-section">Oil Change & Tuning</a></li>
+                    <li><a href="#services-section">Battery Maintenance</a></li>
+                    <li><a href="#services-section">Tyre Alignment Checking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="#">Contact Specialist</a></li>
+                    <li><a href="#">Warranty Guidelines</a></li>
+                    <li><a href="#">Service Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="copyright-text">&copy; 2026 AUTOFIX India. All rights reserved. BMW, BMW M, and BMW Type Next Latin references are property of their respective owners. Sourced in India.</p>
+            <div class="footer-meta-links">
+                <span>IN / EN</span>
+                <a href="#">Cookies</a>
+                <a href="#">Legal Info</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
